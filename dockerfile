@@ -1,6 +1,6 @@
 FROM quay.io/keycloak/keycloak:latest as builder
 WORKDIR /opt/keycloak
-COPY ./keycloak-theme-for-kc-all-other-versions.jar /opt/keycloak/providers/
+COPY ./tnex-theme.jar /opt/keycloak/providers/
 RUN /opt/keycloak/bin/kc.sh build
 
 FROM quay.io/keycloak/keycloak:latest
